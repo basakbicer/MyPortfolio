@@ -1,0 +1,35 @@
+﻿@model Login
+@{
+    ViewData["Title"] = "UpdateLogin";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Kullanıcı Bilgileri</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Bilgi Güncelleme Sayfası</div>
+					</div>
+					<div class="card-body">
+						<form method="post">
+							<input type="hidden" asp-for="loginId" />
+							<label>Kullanıcı Adı</label>
+							<input type="text" asp-for="loginName" class="form-control" />
+							<br />
+							<label>Şifre</label>
+							<input type="text" asp-for="password" class="form-control" />
+							<br />
+							<button class="btn btn-warning">Deneyimi Güncelle</button>
+							<br />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
